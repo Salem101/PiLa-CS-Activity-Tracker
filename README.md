@@ -21,7 +21,7 @@
 1. Once selected, click the 'Start' button 
     ![Image click start button](https://www.dropbox.com/s/0o7nqg562mr9or6/startButton.JPG?dl=0)
 1. The planner list for your selected track and week will show up in a new window. 
-    ![Image planner list](https://www.dropbox.com/s/0dntp68ceyhtvy9/plannerList.png?dl=0)
+    ![Image planner list](plannerList.png)
 1. A text file named 'PiLa-CS activity list' will be saved to your files for the selected week. 
 1. When finished, simply press 'Close Window' to close the application. 
     ![Image close window button](https://www.dropbox.com/s/8ewnudt1rql83y8/closeWindowButton.png?dl=0)
