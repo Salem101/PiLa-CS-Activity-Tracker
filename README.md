@@ -3,19 +3,19 @@
 **## PiLa-CS [Participating in Literacies and Computer Science]**
 [PiLa-CS website](https://www.pila-cs.org/)
 
-**## About PiLa-CS:** 
-    PiLa-CS (Participating in Literacies and Computer Science) is an organization located in New York. Their research practice partnership promotes equity in Computer Science education (CS Ed) for emergent bilingual or multilingual learners. The summer track includes many teachers which their goal is to be a community of learners who enable better CS teaching skills and units for emergent bi/multi linguals. There are 4 tracks for teachers to choose from. The summer program is about 7 weeks long. 
+## **About PiLa-CS:** 
+ PiLa-CS (Participating in Literacies and Computer Science) is an organization located in New York. Their research practice partnership promotes equity in Computer Science education (CS Ed) for emergent bilingual or multilingual learners. The summer track includes many teachers which their goal is to be a community of learners who enable better CS teaching skills and units for emergent bi/multi linguals. There are 4 tracks for teachers to choose from. The summer program is about 7 weeks long. 
 
 
-**## Project Description:**
-     The purpose of this project is to provide a specific planner for the teachers so they can stay on track and know their objectives and goals for each week of the program. This application is super simple for users of any age. Aside from viewing the planner To-do list and goals, a copy of the checklist and goals are downloaded to the user's device as a text file for easy reference and use. 
+## **Project Description:**
+The purpose of this project is to provide a specific planner for the teachers so they can stay on track and know their objectives and goals for each week of the program. This application is super simple for users of any age. Aside from viewing the planner To-do list and goals, a copy of the checklist and goals are downloaded to the user's device as a text file for easy reference and use. 
 
 
-**## Testing:**
-    I tested every possibility a user might select. If a user forgets to select a week a window pops up and says 'please select a week to view planner', and when the user presses the 'ok' button it takes them back to the first window to select the week again. 
+## **Testing:**
+I tested every possibility a user might select. If a user forgets to select a week a window pops up and says 'please select a week to view planner', and when the user presses the 'ok' button it takes them back to the first window to select the week again. 
 
 
-**## Step-by-Step instructions for the user:**
+# **Step-by-Step instructions for the user:**
 1. Open the PiLa-CS Activity Tracker
     [Image start window](https://www.dropbox.com/s/3fxmy595yxh0ojo/startWindow.JPG?dl=0)
 1. Select the Track # that you committed to. (Track 1, Track 2, Track 3, or Track 4)
