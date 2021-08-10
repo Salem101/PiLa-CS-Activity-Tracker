@@ -12,10 +12,7 @@
 
 
 **## Testing:**
-    I tested 
-
-##** How to install:**
-
+    I tested every possibility a user might select. If a user forgets to select a week a window pops up and says 'please select a week to view planner', and when the user presses the 'ok' button it takes them back to the first window to select the week again. 
 
 
 **## Step-by-Step instructions for the user:**
