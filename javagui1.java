@@ -104,7 +104,11 @@ public class PiLaActivityTracker implements ActionListener{
 		frame1.setTitle("PiLa-CS Activity Tracker ");
 		frame1.setVisible(true);
 		frame.setVisible(false); 
-
+		
+		labela = new JLabel("A file named 'PiLa-CS activity list' has been downloaded. Check your folder. "); 
+	    	labela.setBounds(10, 530, 500, 25);
+		frame1.add(labela);
+		
 		if(week == "week 1") {
 				frame1.setSize(475, 600);
 				label1 = new JLabel("Week 1 - Orientation "); 
