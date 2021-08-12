@@ -22,7 +22,7 @@ public class PiLaActivityTracker implements ActionListener{
 	    private static String week;
 	    private static JFrame frame, frame1; 
 	    private static Checkbox box1, box2, box3, box4, box5, box6, box7, box8; 
-	    private static JLabel label1, label2, label3, label4, errorLabel; 
+	    private static JLabel label1, label2, label3, label4, errorLabel, labela; 
 	    
 	    public static void main(String[]args) {
 		
@@ -92,7 +92,7 @@ public class PiLaActivityTracker implements ActionListener{
 		frame.add(panel3); 
 		frame.add(panel4); 
 		frame.add(panel5);	
-		  
+		 
 	}
 
 	@Override
@@ -106,9 +106,9 @@ public class PiLaActivityTracker implements ActionListener{
 		frame.setVisible(false); 
 		
 		labela = new JLabel("A file named 'PiLa-CS activity list' has been downloaded. Check your folder. "); 
-	    	labela.setBounds(10, 530, 500, 25);
+	    labela.setBounds(10, 530, 500, 25);
 		frame1.add(labela);
-		
+
 		if(week == "week 1") {
 				frame1.setSize(475, 600);
 				label1 = new JLabel("Week 1 - Orientation "); 
@@ -116,7 +116,7 @@ public class PiLaActivityTracker implements ActionListener{
 				frame1.add(label1); 
 					
 				box1 = new Checkbox("Join Slack. "); 
-				box1.setBounds(10, 30, 300, 50);
+				box1.setBounds(10, 30, 500, 50);
 				frame1.add(box1); 
 					
 				box2 = new Checkbox("Join Flipgrid. "); 
@@ -991,7 +991,6 @@ public class PiLaActivityTracker implements ActionListener{
 		    }
 		closeWindow(); 
 	}
-	
 	
     public void closeWindow() {
 		///TRY NEW BUTTON FOR FILE DOWNLOAD 
