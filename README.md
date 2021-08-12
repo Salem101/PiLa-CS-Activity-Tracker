@@ -24,6 +24,7 @@ I tested every possibility a user might select. If a user forgets to select a we
     [Image selecting week dropdown](https://www.dropbox.com/s/9cnvsgxcxyitvpd/selectWeekDropDown.png?dl=0)
 1. Once selected, click the 'Start' button 
     [Image click start button](https://www.dropbox.com/s/0o7nqg562mr9or6/startButton.JPG?dl=0)
+1. If you get a window with message: 'Error: Please select a week to view the planner'. Then press 'OK' and select the week number. [Image error message](https://www.dropbox.com/s/6prz9x33ao5vyfs/ErrorSelectWeek.png?dl=0)
 1. The planner list for your selected track and week will show up in a new window. 
     [Image planner list](https://www.dropbox.com/s/0dntp68ceyhtvy9/plannerList.png?dl=0)
 1. A text file named 'PiLa-CS activity list' will be saved to your files for the selected week. 
