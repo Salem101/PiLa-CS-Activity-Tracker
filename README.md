@@ -29,6 +29,6 @@ I tested every possibility a user might select. If a user forgets to select a we
     [Image planner list](https://www.dropbox.com/s/0dntp68ceyhtvy9/plannerList.png?dl=0)
 1. A text file named 'PiLa-CS activity list' will be saved to your files for the selected week. 
 1. When finished, simply press 'Close Window' to close the application. 
-    ([Image close window button](https://www.dropbox.com/s/8ewnudt1rql83y8/closeWindowButton.png?dl=0)
+    [Image close window button](https://www.dropbox.com/s/8ewnudt1rql83y8/closeWindowButton.png?dl=0)
 
 __Credits: Rivka Salem__
