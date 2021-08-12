@@ -14,8 +14,8 @@ import java.io.PrintWriter;
 
 public class PiLaActivityTracker implements ActionListener{
 
-		//make the fields private
-		private static JPanel panel1, panel2, panel3, panel4, panel5; 
+		//make the variables so we can use it globally
+		private static JPanel panel1, panel2, panel3, panel4, panel5, panelc; 
 		private static JComboBox weeks; 
 		private static ButtonGroup group; 
 	    private static JRadioButton optiont1, optiont2, optiont3, optiont4;
@@ -26,23 +26,31 @@ public class PiLaActivityTracker implements ActionListener{
 	    
 	    public static void main(String[]args) {
 		
+	    	panelc = new JPanel(); 
+//			panelc.setBackground(Color.CYAN);
+			panelc.setBounds(5, 5, 400, 50);
+		       JLabel instructText = new JLabel("Select the Track you are on, and the week number to view TaskList:");
+		       instructText.setBounds(10, 10, 600, 35);
+		       panelc.add(instructText);
+		      
+		       
 		panel1 = new JPanel(); 
-		//panel1.setBackground(Color.red);
-		panel1.setBounds(0, 5, 100, 50);
+//		panel1.setBackground(Color.red);
+		panel1.setBounds(0, 55, 100, 50);
 	       JLabel trackLabel = new JLabel("Track #:");
-	       trackLabel.setBounds(10, 10, 80, 25);
+	       trackLabel.setBounds(10, 60, 80, 25);
 	       panel1.add(trackLabel);
 		
 		panel2 = new JPanel(); 
-		//panel2.setBackground(Color.blue);
-		panel2.setBounds(0, 55, 100, 50);
+//		panel2.setBackground(Color.blue);
+		panel2.setBounds(0, 105, 100, 50);
 	       JLabel weekLabel = new JLabel("Week #:");
 	       weekLabel.setBounds(10, 10, 80, 25);
 	       panel2.add(weekLabel);
 		
 		panel3 = new JPanel(); 
-		//panel3.setBackground(Color.orange);
-		panel3.setBounds(100, 0, 300, 50);
+//		panel3.setBackground(Color.orange);
+		panel3.setBounds(100, 55, 300, 50);
 			
 	     //Let's use radio buttons to select track
 	       optiont1 = new JRadioButton("Track 1"); 
@@ -64,8 +72,8 @@ public class PiLaActivityTracker implements ActionListener{
 	       panel3.add(optiont4); 
 		
 		panel4 = new JPanel(); 
-		//panel4.setBackground(Color.yellow);
-		panel4.setBounds(100, 50, 150, 50);
+//		panel4.setBackground(Color.yellow);
+		panel4.setBounds(100, 105, 150, 50);
 		
 			//make dropdown for week #
 	       String[] weekList = {"select week", "week 1", "week 2", "week 3", "week 4", "week 5", "week 6", "week 7"};
@@ -74,13 +82,13 @@ public class PiLaActivityTracker implements ActionListener{
 	       panel4.add(weeks); 
 		
 		panel5 = new JPanel(); 
-		//panel5.setBackground(Color.green);
-		panel5.setBounds(0, 100, 250, 50);
+		panel5.setBounds(0, 155, 250, 50);
 	       //make 'Start' button to press
 	       JButton button = new JButton("Start");
 	       panel5.add(button);
 	       button.addActionListener(new PiLaActivityTracker());
 
+	    //make a frame for the start window. Add all the panels to it, and a title.
 		frame = new JFrame(); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(null);
@@ -92,9 +100,10 @@ public class PiLaActivityTracker implements ActionListener{
 		frame.add(panel3); 
 		frame.add(panel4); 
 		frame.add(panel5);	
+		frame.add(panelc); 
 		 
 	}
-
+	//set action when 'start' button is pressed, depending on the selected week & track 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		week = (weeks.getSelectedItem()).toString(); 
@@ -965,6 +974,9 @@ public class PiLaActivityTracker implements ActionListener{
 			
 		}
 		
+		/*if no week is selected:  
+		 * user will get error message, when user presses 'ok' will be returned window to select a week
+		*/
 		if(week == "select week"){
 			frame1.setSize(400, 200);
 			JPanel panelA = new JPanel(); 
@@ -992,6 +1004,7 @@ public class PiLaActivityTracker implements ActionListener{
 		closeWindow(); 
 	}
 	
+	//set functionality to 'close window' button. 
     public void closeWindow() {
 		///TRY NEW BUTTON FOR FILE DOWNLOAD 
 		JPanel panelC = new JPanel(); 
@@ -1008,6 +1021,8 @@ public class PiLaActivityTracker implements ActionListener{
 		  }
 		);
     }
+    
+    //fetch all data to use in export text file
     public void exporter1(String text1, String check1, String check2, String check3, String check4, String check5, String text4, String check6, String check7, String check8, String text2, String text3) {
 		PrintWriter writer = null;
 		try {
