@@ -17,7 +17,7 @@ I tested every possibility a user might select. If a user forgets to select a we
 
 # **Step-by-Step instructions for the user:**
 1. Open the PiLa-CS Activity Tracker
-    [Image start window](https://www.dropbox.com/s/3fxmy595yxh0ojo/startWindow.JPG?dl=0)
+    [Image start window](https://www.dropbox.com/s/ut8ewklrqjp3tp2/startWindow.JPG?dl=0)
 1. Select the Track # that you committed to. (Track 1, Track 2, Track 3, or Track 4)
     [Image selecting track button](https://www.dropbox.com/s/9cyhz414vckrvyi/selectTrackButton.png?dl=0)
 1. Select the Week # of the program which you would like to see the tasks and goals. 
